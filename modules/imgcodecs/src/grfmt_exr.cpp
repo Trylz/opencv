@@ -85,14 +85,7 @@ namespace cv
 
 static bool isOpenEXREnabled()
 {
-    static const bool PARAM_ENABLE_OPENEXR = utils::getConfigurationParameterBool("OPENCV_IO_ENABLE_OPENEXR",
-#ifdef OPENCV_IMGCODECS_USE_OPENEXR
-        true
-#else
-        false
-#endif
-    );
-    return PARAM_ENABLE_OPENEXR;
+    return true;
 }
 static void initOpenEXR()
 {
